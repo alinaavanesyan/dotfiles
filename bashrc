@@ -3,12 +3,6 @@ DOTFILES=dotfiles
 source ~/${DOTFILES}/aliases
 source ~/${DOTFILES}/export
 
-#sets terminal title to passed argument 
-function set_title {
-	x=$1
-	PROMPT_COMMAND='echo -ne "\033]0;${x}\007"'
-}
-
 # Set terminal title to $PWD
 PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
 
@@ -45,5 +39,3 @@ if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
 		export PROJECT_HOME="${HOME}/0dev/pythonvw_projects"
 		source /usr/local/bin/virtualenvwrapper.sh
 fi
-
-#echo -e -n "\x1b[\x35 q" # changes to blinking bar

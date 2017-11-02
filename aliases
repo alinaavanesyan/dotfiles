@@ -10,9 +10,8 @@ alias -- -='cd -'  # escape dash with --
 # Enable aliases to be sudo’ed
 alias sudu='sudo '
 
-# Add verbose to all; prompt once for rm
+# Add verbose to mv and cp;
 alias mv='mv -v'
-# alias rm='rm -I -v'
 alias cp='cp -v'
 
 # ls shortcuts
@@ -35,11 +34,6 @@ alias t='tree --noreport --dirsfirst'
 alias chrome='google-chrome-stable'
 alias grep='grep -E --color=auto'
 alias pip=pip3  #use pip3 by default; use pip2 for python2.x
-
-#distraction-free writing 
-alias wp='gnome-terminal --window-with-profile=writingbg & --maximize &
---hide-menubar gnome-terminal --window-with-profile=writing &
---geometry=100x75 --hide-menubar & exit'
 
 # virtualenv/virtualenvwrapper:
 if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
